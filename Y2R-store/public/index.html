@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Y2R | متجر الأحذية الرياضية</title>
+<meta name="description" content="Y2R — أحذية رياضية بتصاميم عصرية. توصيل لكل الولايات والدفع عند الاستلام.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="intro" aria-hidden="true"><div class="ibox"><div class="ilogo"><span>Y</span><span>2</span><span>R</span></div><div id="introShoe"></div></div></div>
+
+<!-- شريط فريق الدعم (أعلى الموقع) — عدّل الرقم من هنا -->
+<div class="topbar" id="topbar">
+  <div class="tb-in">
+    <div class="tb-side tb-support">
+      <span class="dot" aria-hidden="true"></span>
+      <span>واجهة تجريبية — بيانات التواصل تحتاج التفعيل</span>
+      <a href="#/support" dir="ltr">رقم التواصل غير مفعّل</a>
+    </div>
+    <div class="tb-ticker" aria-live="off">
+      <span>🚚 توصيل لكل الولايات</span>
+      <span>💵 الدفع عند الاستلام</span>
+      <span>↩ إرجاع وتبديل خلال 7 أيام</span>
+    </div>
+    <div class="tb-side tb-links">
+      <a href="#/support">مساعدة</a>
+      <a href="#/support">تتبّع الطلب</a>
+      <a href="#/support" target="_blank" rel="noopener">واتساب</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <a class="logo" href="#/" aria-label="Y2R الرئيسية">Y<i>2</i>R</a>
+  <nav class="nav" id="nav" aria-label="القائمة الرئيسية"></nav>
+  <div class="hbtns">
+    <label class="search" aria-label="بحث">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="ابحث عن حذاء…" autocomplete="off">
+    </label>
+    <button class="ib" id="favoritesToggle" aria-label="عرض المفضلة">♡ <b id="favCount">0</b></button>
+    <button class="ib" id="theme" aria-label="تبديل الوضع">◐</button>
+    <button class="ib cartb" id="openCart" aria-label="السلة">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 7a3 3 0 016 0" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <b id="count">0</b>
+    </button>
+  </div>
+</header>
+
+<section class="hero home">
+  <div class="hero-in">
+    <div class="hero-txt">
+      <span class="eyebrow">المجموعة الجديدة 2026</span>
+      <h1>خطوة أخف.<br>حضور أقوى.</h1>
+      <p>أحذية رياضية بتصاميم عصرية وراحة تدوم طوال اليوم. اختر لونك ومقاسك واطلبها وأنت في بيتك.</p>
+      <div class="hero-btns"><a class="cta" href="#/shop">تسوّق الآن</a><a class="cta ghost" href="#view3d">اكتشف الحذاء</a></div>
+    </div>
+    <div class="heroshoe" id="heroShoe"></div>
+  </div>
+</section>
+
+<section class="perks-strip home" aria-label="مزايا المتجر">
+  <div><b>توصيل لكل الولايات</b><small>إلى باب بيتك</small></div>
+  <div><b>الدفع عند الاستلام</b><small>افحص ثم ادفع</small></div>
+  <div><b>إرجاع وتبديل</b><small>خلال 7 أيام</small></div>
+  <div><b>دعم مباشر</b><small>يوميًا حتى 21:00</small></div>
+</section>
+
+<section class="wrap home" aria-label="الفئات">
+  <h2>تسوّق حسب الفئة</h2>
+  <div class="cats" id="cats"></div>
+</section>
+
+<main class="wrap home" id="shop">
+  <div class="shop-head">
+    <h2 id="shopTitle">كل الأحذية</h2>
+    <select id="sort" class="sort" aria-label="الترتيب">
+      <option value="new">الأحدث</option>
+      <option value="asc">السعر: من الأقل</option>
+      <option value="desc">السعر: من الأعلى</option>
+    </select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="shop-tools"><button class="chip" id="showAll">كل المنتجات</button><button class="chip" id="showFavorites">♡ قائمة المفضلة</button><label class="price-filter">أقصى سعر <input id="maxPrice" type="number" min="0" step="500" placeholder="بدون حد"> دج</label></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<section class="wrap view home" id="view3d" aria-label="اكتشف الحذاء">
+  <h2>اكتشف الحذاء</h2>
+  <div class="vtabs" id="vtabs"></div>
+  <div class="v3" id="v3"><div id="spin"></div></div>
+  <div class="y2r-swatches" id="vsw" role="group" aria-label="اللون"></div>
+  
+</section>
+
+<section class="wrap pdp" id="pdp" aria-label="صفحة المنتج">
+  <nav class="crumbs" aria-label="مسار التصفح"><a href="#/">الرئيسية</a> / <a id="pcat" href="#/shop">المتجر</a> / <span id="pname"></span></nav>
+  <div class="pgrid">
+    <div class="pmedia"><div class="v3" id="pv3"><div id="pspin"></div></div></div>
+    <div class="pinfo">
+      <small id="pcatl"></small>
+      <h1 id="ptitle"></h1>
+      <div class="price pprice" id="pprice"></div>
+      <p id="pdesc"></p>
+      <h3>اللون: <span id="pcolor"></span></h3>
+      <div class="y2r-swatches" id="pswatch" role="group" aria-label="اللون"></div>
+      <h3>المقاس</h3>
+      <div class="sizes" id="psizes" role="group" aria-label="المقاس"></div>
+      <button class="cta" id="padd">أضف إلى السلة</button><button class="add" id="pfav" type="button">♡ أضف إلى المفضلة</button>
+      <ul class="perks"><li>التوصيل لكل الولايات</li><li>الدفع عند الاستلام</li><li>إرجاع وتبديل خلال 7 أيام</li></ul>
+    </div>
+  </div>
+  <h2>قد يعجبك أيضًا</h2>
+  <div class="grid" id="prel"></div>
+</section>
+
+<section class="wrap support" id="support" aria-label="الدعم">
+  <h2>مركز المساعدة</h2>
+  <div class="track-box"><h3>تتبّع طلبك</h3><p>أدخل رقم الطلب ورقم الهاتف اللذين استخدمتهما عند الشراء.</p><form id="trackForm"><input class="f" id="trackId" placeholder="رقم الطلب: Y2R-…" required><input class="f" id="trackPhone" placeholder="رقم الهاتف" inputmode="tel" required><button class="cta" type="submit">تتبّع الطلب</button></form><div id="trackResult" class="track-result" aria-live="polite"></div></div>
+  <div class="sgrid">
+    <div><b>فريق الدعم</b><p>نرد على استفساراتك يوميًا من 09:00 إلى 21:00 عبر الهاتف أو واتساب.</p><a class="cta ghost dark" href="#/support">اتصل بنا</a></div>
+    <div><b>التوصيل</b><p>نوصّل لكل الولايات، والدفع يكون عند الاستلام بعد معاينة الحذاء.</p></div>
+    <div><b>الإرجاع والتبديل</b><p>يمكنك إرجاع أو تبديل المقاس خلال 7 أيام من الاستلام.</p></div>
+  </div>
+  <div class="faq"><h3>أسئلة متكررة</h3><details><summary>كيف أطلب من المتجر؟</summary><p>اختر المنتج والمقاس واللون، أضفه إلى السلة ثم املأ بيانات الطلب. هذه النسخة للتجربة فقط.</p></details><details><summary>هل الدفع الإلكتروني متاح؟</summary><p>لا، لم يتم تفعيل أي وسيلة دفع إلكترونية أو خدمة توصيل بعد.</p></details><details><summary>كيف أتتبع الطلب؟</summary><p>استخدم رقم الطلب ورقم الهاتف من صفحة مركز المساعدة. تتبع النسخة التجريبية يخص الطلبات التجريبية فقط.</p></details><details><summary>هل يمكن تبديل المقاس؟</summary><p>سيتم نشر سياسة التبديل النهائية بعد الاتفاق مع شركة التوصيل واعتماد شروط النشاط.</p></details></div>
+</section>
+
+<footer>
+  <div class="f-in">
+    <div><a class="logo" href="#/">Y<i>2</i>R</a><p>أحذية رياضية بتصاميم عصرية وراحة تدوم طوال اليوم.</p></div>
+    <div><h4>المتجر</h4><a href="#/shop">كل الأحذية</a><span id="fcats"></span></div>
+    <div><h4>خدمة العملاء</h4><a href="#/support">مركز المساعدة</a><a href="#/support">التوصيل</a><a href="#/support">الإرجاع والتبديل</a><a href="#/support" dir="ltr">رقم التواصل غير مفعّل</a></div>
+  </div>
+  <div class="f-copy">Y2R © 2026 — متجر تجريبي. الطلبات غير تجارية حتى تفعيل النشاط وخدمات التوصيل.</div>
+</footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" aria-label="سلة التسوق">
+  <h2>سلتك</h2>
+  <div class="items" id="items"></div>
+  <div class="total"><span>المجموع</span><span id="total">0</span></div>
+  <input class="f" id="cname" placeholder="الاسم الكامل" autocomplete="name"><input class="f" id="cphone" placeholder="رقم الهاتف" inputmode="tel" autocomplete="tel"><input class="f" id="ccity" placeholder="المدينة" autocomplete="address-level2"><div class="msg" id="msg" role="status"></div>
+  <button class="cta" id="checkout">إتمام الطلب</button>
+  <button class="ib wide" id="closeCart">متابعة التسوق</button>
+</aside>
+
+<script src="/app.js"></script>
+</body>
+</html>

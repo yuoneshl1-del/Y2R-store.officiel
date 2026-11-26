@@ -1,0 +1,918 @@
+[
+ {
+  "id": 1,
+  "name": "Y2R Sand",
+  "category": "لايف ستايل",
+  "price": 10200,
+  "image": "/images/shoes/y2r-sand.webp",
+  "cut": "/images/cut/y2r-sand.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#a17e60"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-sand-red.webp",
+    "cut": "/images/colors/y2r-sand-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-sand-green.webp",
+    "cut": "/images/colors/y2r-sand-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-sand-blue.webp",
+    "cut": "/images/colors/y2r-sand-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-sand-purple.webp",
+    "cut": "/images/colors/y2r-sand-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-sand-pink.webp",
+    "cut": "/images/colors/y2r-sand-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "name": "Y2R Heritage",
+  "category": "لايف ستايل",
+  "price": 10900,
+  "image": "/images/shoes/y2r-heritage.webp",
+  "cut": "/images/cut/y2r-heritage.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#725039"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-heritage-red.webp",
+    "cut": "/images/colors/y2r-heritage-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-heritage-green.webp",
+    "cut": "/images/colors/y2r-heritage-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-heritage-blue.webp",
+    "cut": "/images/colors/y2r-heritage-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-heritage-purple.webp",
+    "cut": "/images/colors/y2r-heritage-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-heritage-pink.webp",
+    "cut": "/images/colors/y2r-heritage-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "name": "Y2R Blaze",
+  "category": "رياضي",
+  "price": 13700,
+  "image": "/images/shoes/y2r-blaze.webp",
+  "cut": "/images/cut/y2r-blaze.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#ab5324"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-blaze-green.webp",
+    "cut": "/images/colors/y2r-blaze-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-blaze-blue.webp",
+    "cut": "/images/colors/y2r-blaze-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-blaze-purple.webp",
+    "cut": "/images/colors/y2r-blaze-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-blaze-pink.webp",
+    "cut": "/images/colors/y2r-blaze-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "name": "Y2R Midas",
+  "category": "رياضي",
+  "price": 14400,
+  "image": "/images/shoes/y2r-midas.webp",
+  "cut": "/images/cut/y2r-midas.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#8f6938"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-midas-red.webp",
+    "cut": "/images/colors/y2r-midas-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-midas-green.webp",
+    "cut": "/images/colors/y2r-midas-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-midas-blue.webp",
+    "cut": "/images/colors/y2r-midas-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-midas-purple.webp",
+    "cut": "/images/colors/y2r-midas-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-midas-pink.webp",
+    "cut": "/images/colors/y2r-midas-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "name": "Y2R Aurum",
+  "category": "رياضي",
+  "price": 14800,
+  "image": "/images/shoes/y2r-aurum.webp",
+  "cut": "/images/cut/y2r-aurum.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#8d6d42"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-aurum-red.webp",
+    "cut": "/images/colors/y2r-aurum-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-aurum-green.webp",
+    "cut": "/images/colors/y2r-aurum-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-aurum-blue.webp",
+    "cut": "/images/colors/y2r-aurum-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-aurum-purple.webp",
+    "cut": "/images/colors/y2r-aurum-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-aurum-pink.webp",
+    "cut": "/images/colors/y2r-aurum-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "name": "Y2R Cobalt",
+  "category": "رياضي",
+  "price": 13200,
+  "image": "/images/shoes/y2r-cobalt.webp",
+  "cut": "/images/cut/y2r-cobalt.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#163d85"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-cobalt-red.webp",
+    "cut": "/images/colors/y2r-cobalt-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-cobalt-orange.webp",
+    "cut": "/images/colors/y2r-cobalt-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-cobalt-green.webp",
+    "cut": "/images/colors/y2r-cobalt-green-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-cobalt-purple.webp",
+    "cut": "/images/colors/y2r-cobalt-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-cobalt-pink.webp",
+    "cut": "/images/colors/y2r-cobalt-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "name": "Y2R High Rise",
+  "category": "عالي الساق",
+  "price": 12500,
+  "image": "/images/shoes/y2r-highrise.webp",
+  "cut": "/images/cut/y2r-highrise.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#a07032"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-highrise-red.webp",
+    "cut": "/images/colors/y2r-highrise-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-highrise-green.webp",
+    "cut": "/images/colors/y2r-highrise-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-highrise-blue.webp",
+    "cut": "/images/colors/y2r-highrise-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-highrise-purple.webp",
+    "cut": "/images/colors/y2r-highrise-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-highrise-pink.webp",
+    "cut": "/images/colors/y2r-highrise-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "name": "Y2R Crown",
+  "category": "لايف ستايل",
+  "price": 11400,
+  "image": "/images/shoes/y2r-crown.webp",
+  "cut": "/images/cut/y2r-crown.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#956e3a"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-crown-red.webp",
+    "cut": "/images/colors/y2r-crown-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-crown-green.webp",
+    "cut": "/images/colors/y2r-crown-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-crown-blue.webp",
+    "cut": "/images/colors/y2r-crown-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-crown-purple.webp",
+    "cut": "/images/colors/y2r-crown-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-crown-pink.webp",
+    "cut": "/images/colors/y2r-crown-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "name": "Y2R Cognac",
+  "category": "لايف ستايل",
+  "price": 10600,
+  "image": "/images/shoes/y2r-cognac.webp",
+  "cut": "/images/cut/y2r-cognac.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#5e3a24"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-cognac-red.webp",
+    "cut": "/images/colors/y2r-cognac-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-cognac-green.webp",
+    "cut": "/images/colors/y2r-cognac-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-cognac-blue.webp",
+    "cut": "/images/colors/y2r-cognac-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-cognac-purple.webp",
+    "cut": "/images/colors/y2r-cognac-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-cognac-pink.webp",
+    "cut": "/images/colors/y2r-cognac-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "name": "Y2R Cloud",
+  "category": "رياضي",
+  "price": 14000,
+  "image": "/images/shoes/y2r-cloud.webp",
+  "cut": "/images/cut/y2r-cloud.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#91723f"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-cloud-red.webp",
+    "cut": "/images/colors/y2r-cloud-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-cloud-orange.webp",
+    "cut": "/images/colors/y2r-cloud-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-cloud-green.webp",
+    "cut": "/images/colors/y2r-cloud-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-cloud-blue.webp",
+    "cut": "/images/colors/y2r-cloud-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-cloud-purple.webp",
+    "cut": "/images/colors/y2r-cloud-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-cloud-pink.webp",
+    "cut": "/images/colors/y2r-cloud-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "name": "Y2R Volt",
+  "category": "رياضي",
+  "price": 12900,
+  "image": "/images/shoes/y2r-volt.webp",
+  "cut": "/images/cut/y2r-volt.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#7f9624"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-volt-red.webp",
+    "cut": "/images/colors/y2r-volt-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-volt-orange.webp",
+    "cut": "/images/colors/y2r-volt-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-volt-green.webp",
+    "cut": "/images/colors/y2r-volt-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-volt-blue.webp",
+    "cut": "/images/colors/y2r-volt-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-volt-purple.webp",
+    "cut": "/images/colors/y2r-volt-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-volt-pink.webp",
+    "cut": "/images/colors/y2r-volt-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "name": "Y2R Rally",
+  "category": "عالي الساق",
+  "price": 12100,
+  "image": "/images/shoes/y2r-rally.webp",
+  "cut": "/images/cut/y2r-rally.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#83181a"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-rally-orange.webp",
+    "cut": "/images/colors/y2r-rally-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-rally-green.webp",
+    "cut": "/images/colors/y2r-rally-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-rally-blue.webp",
+    "cut": "/images/colors/y2r-rally-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-rally-purple.webp",
+    "cut": "/images/colors/y2r-rally-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-rally-pink.webp",
+    "cut": "/images/colors/y2r-rally-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "name": "Y2R Mesh",
+  "category": "رياضي",
+  "price": 11300,
+  "image": "/images/shoes/y2r-mesh.webp",
+  "cut": "/images/cut/y2r-mesh.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#a37f51"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-mesh-red.webp",
+    "cut": "/images/colors/y2r-mesh-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-mesh-orange.webp",
+    "cut": "/images/colors/y2r-mesh-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-mesh-green.webp",
+    "cut": "/images/colors/y2r-mesh-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-mesh-blue.webp",
+    "cut": "/images/colors/y2r-mesh-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-mesh-purple.webp",
+    "cut": "/images/colors/y2r-mesh-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-mesh-pink.webp",
+    "cut": "/images/colors/y2r-mesh-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "name": "Y2R Street",
+  "category": "لايف ستايل",
+  "price": 9800,
+  "image": "/images/shoes/y2r-street.webp",
+  "cut": "/images/cut/y2r-street.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#807c83"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-street-red.webp",
+    "cut": "/images/colors/y2r-street-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-street-orange.webp",
+    "cut": "/images/colors/y2r-street-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-street-green.webp",
+    "cut": "/images/colors/y2r-street-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-street-blue.webp",
+    "cut": "/images/colors/y2r-street-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-street-purple.webp",
+    "cut": "/images/colors/y2r-street-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-street-pink.webp",
+    "cut": "/images/colors/y2r-street-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "name": "Y2R Noir Gold",
+  "category": "لايف ستايل",
+  "price": 11000,
+  "image": "/images/shoes/y2r-noir-gold.webp",
+  "cut": "/images/cut/y2r-noir-gold.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#7e5932"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-noir-gold-red.webp",
+    "cut": "/images/colors/y2r-noir-gold-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-noir-gold-green.webp",
+    "cut": "/images/colors/y2r-noir-gold-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-noir-gold-blue.webp",
+    "cut": "/images/colors/y2r-noir-gold-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-noir-gold-purple.webp",
+    "cut": "/images/colors/y2r-noir-gold-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-noir-gold-pink.webp",
+    "cut": "/images/colors/y2r-noir-gold-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "name": "Y2R Duo",
+  "category": "لايف ستايل",
+  "price": 10800,
+  "image": "/images/shoes/y2r-duo.webp",
+  "cut": "/images/cut/y2r-duo.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#a28869"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-duo-red.webp",
+    "cut": "/images/colors/y2r-duo-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-duo-orange.webp",
+    "cut": "/images/colors/y2r-duo-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-duo-green.webp",
+    "cut": "/images/colors/y2r-duo-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-duo-blue.webp",
+    "cut": "/images/colors/y2r-duo-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-duo-purple.webp",
+    "cut": "/images/colors/y2r-duo-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-duo-pink.webp",
+    "cut": "/images/colors/y2r-duo-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "name": "Y2R Trail",
+  "category": "جبلي",
+  "price": 13600,
+  "image": "/images/shoes/y2r-trail.webp",
+  "cut": "/images/cut/y2r-trail.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#8f6244"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-trail-red.webp",
+    "cut": "/images/colors/y2r-trail-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-trail-green.webp",
+    "cut": "/images/colors/y2r-trail-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-trail-blue.webp",
+    "cut": "/images/colors/y2r-trail-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-trail-purple.webp",
+    "cut": "/images/colors/y2r-trail-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-trail-pink.webp",
+    "cut": "/images/colors/y2r-trail-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "name": "Y2R Shadow",
+  "category": "لايف ستايل",
+  "price": 10100,
+  "image": "/images/shoes/y2r-shadow.webp",
+  "cut": "/images/cut/y2r-shadow.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#2b282a"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-shadow-red.webp",
+    "cut": "/images/colors/y2r-shadow-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-shadow-orange.webp",
+    "cut": "/images/colors/y2r-shadow-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-shadow-green.webp",
+    "cut": "/images/colors/y2r-shadow-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-shadow-blue.webp",
+    "cut": "/images/colors/y2r-shadow-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-shadow-purple.webp",
+    "cut": "/images/colors/y2r-shadow-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-shadow-pink.webp",
+    "cut": "/images/colors/y2r-shadow-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "name": "Y2R Air",
+  "category": "رياضي",
+  "price": 12400,
+  "image": "/images/shoes/y2r-air.webp",
+  "cut": "/images/cut/y2r-air.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#a7a4a8"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-air-red.webp",
+    "cut": "/images/colors/y2r-air-red-cut.webp"
+   },
+   {
+    "name": "برتقالي",
+    "hex": "#fb8c00",
+    "image": "/images/colors/y2r-air-orange.webp",
+    "cut": "/images/colors/y2r-air-orange-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-air-green.webp",
+    "cut": "/images/colors/y2r-air-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-air-blue.webp",
+    "cut": "/images/colors/y2r-air-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-air-purple.webp",
+    "cut": "/images/colors/y2r-air-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-air-pink.webp",
+    "cut": "/images/colors/y2r-air-pink-cut.webp"
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "name": "Y2R Summit",
+  "category": "جبلي",
+  "price": 14300,
+  "image": "/images/shoes/y2r-summit.webp",
+  "cut": "/images/cut/y2r-summit.webp",
+  "colors": [
+   {
+    "name": "الأصلي",
+    "hex": "#936c39"
+   },
+   {
+    "name": "أحمر",
+    "hex": "#e53935",
+    "image": "/images/colors/y2r-summit-red.webp",
+    "cut": "/images/colors/y2r-summit-red-cut.webp"
+   },
+   {
+    "name": "أخضر",
+    "hex": "#2e9e4f",
+    "image": "/images/colors/y2r-summit-green.webp",
+    "cut": "/images/colors/y2r-summit-green-cut.webp"
+   },
+   {
+    "name": "أزرق",
+    "hex": "#1e66f5",
+    "image": "/images/colors/y2r-summit-blue.webp",
+    "cut": "/images/colors/y2r-summit-blue-cut.webp"
+   },
+   {
+    "name": "بنفسجي",
+    "hex": "#8e44ad",
+    "image": "/images/colors/y2r-summit-purple.webp",
+    "cut": "/images/colors/y2r-summit-purple-cut.webp"
+   },
+   {
+    "name": "وردي",
+    "hex": "#ec4899",
+    "image": "/images/colors/y2r-summit-pink.webp",
+    "cut": "/images/colors/y2r-summit-pink-cut.webp"
+   }
+  ]
+ }
+]
