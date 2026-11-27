@@ -1,5 +1,6 @@
 (function () {
-  var SIZES = [39, 40, 41, 42, 43, 44];
+  var SIZES = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45];
+  var STOCK = {};
   var P = [], cart = [], sel = {}, colSel = {}, filt = "الكل", query = "", sortBy = "new", favorites = [], favOnly = false, maxPrice = 0;
   function $(i) { return document.getElementById(i); }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
@@ -9,6 +10,8 @@
   function imgOf(p, i) { var c = cols(p)[i || 0]; return (c && c.image) || p.image; }
   function cutOf(p, i) { var c = cols(p)[i || 0]; return (c && c.cut) || p.cut || p.image; }
   function byId(id) { return P.filter(function (x) { return x.id == id; })[0]; }
+  function stockFor(id,size,colorIndex){var p=byId(id),name=p&&cols(p)[colorIndex||0]&&cols(p)[colorIndex||0].name;return Number(STOCK[id]&&STOCK[id][name]&&STOCK[id][name].sizes&&STOCK[id][name].sizes[String(size)])||0;}
+  function renderProductSizes(p){var z0=sel[p.id]||42;$('psizes').innerHTML=SIZES.map(function(z){var q=stockFor(p.id,z,colSel[p.id]||0);return '<button class="sz" data-z="'+z+'" aria-pressed="'+(z==z0)+'" '+(q<=0?'disabled':'')+'>'+z+(q<=0?' · نفد':' · '+q)+'</button>';}).join('');}
   function press(b) { b.parentNode.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); b.setAttribute("aria-pressed", "true"); }
   function save() { try { localStorage.setItem("y2r-cart", JSON.stringify(cart)); localStorage.setItem("y2r-favorites", JSON.stringify(favorites)); } catch (e) {} }
   function loadFavorites() { try { favorites = (JSON.parse(localStorage.getItem("y2r-favorites")) || []).map(Number).filter(function(id){ return !!byId(id); }); } catch(e) { favorites=[]; } }
@@ -63,8 +66,10 @@
   }
   function add(id) {
     var z = sel[id] || 42, ci = colSel[id] || 0;
+    if(stockFor(id,z,ci)<=0){$("msg").textContent="المقاس المحدد غير متوفر حاليًا.";return;}
+    var inCart=cart.filter(function(i){return i.id==id&&i.z==z&&i.ci==ci;})[0]; if(inCart&&inCart.q>=stockFor(id,z,ci)){$("msg").textContent="لا يمكن إضافة كمية أكبر من المخزون المتاح.";return;}
     var f = cart.filter(function (i) { return i.id == id && i.z == z && i.ci == ci; })[0];
-    if (f) f.q = Math.min(10, f.q + 1); else cart.push({ id: id, z: z, ci: ci, q: 1 });
+    if (f) f.q = Math.min(stockFor(id,z,ci),10, f.q + 1); else cart.push({ id: id, z: z, ci: ci, q: 1 });
     $("msg").textContent = ""; save(); render(); document.body.classList.add("open");
   }
 
@@ -97,14 +102,13 @@
     $("pcat").textContent = p.category; $("pcat").href = "#/shop/" + encodeURIComponent(p.category);
     $("pprice").textContent = money(p.price); $("pdesc").textContent = p.description || DESC[p.category] || "";
     $("pswatch").innerHTML = cols(p).map(function (c, i) { return '<button class="y2r-sw" data-k="' + i + '" title="' + esc(c.name) + '" aria-label="اللون: ' + esc(c.name) + '" aria-pressed="' + (i == (colSel[id] || 0)) + '" style="background:' + c.hex + '"></button>'; }).join("");
-    var z0 = sel[id] || 42;
-    $("psizes").innerHTML = SIZES.map(function (z) { return '<button class="sz" data-z="' + z + '" aria-pressed="' + (z == z0) + '">' + z + '</button>'; }).join("");
+    renderProductSizes(p);
     $("pcolor").textContent = cur(p).name; show3D(1, p); var pf=$("pfav"); if(pf){pf.textContent=isFav(id)?"♥ في المفضلة — إزالة":"♡ أضف إلى المفضلة"; pf.setAttribute("aria-pressed",isFav(id));}
     var rel = P.filter(function (x) { return x.id != id && x.category == p.category; });
     P.forEach(function (x) { if (rel.length < 4 && x.id != id && rel.indexOf(x) < 0) rel.push(x); });
     $("prel").innerHTML = rel.slice(0, 4).map(cardHtml).join("");
   }
-  function pdpColor(p) { $("pcolor").textContent = cur(p).name; show3D(1, p); var pf=$("pfav"); if(pf){pf.textContent=isFav(id)?"♥ في المفضلة — إزالة":"♡ أضف إلى المفضلة"; pf.setAttribute("aria-pressed",isFav(id));} }
+  function pdpColor(p) { $("pcolor").textContent = cur(p).name; renderProductSizes(p); show3D(1, p); var pf=$("pfav"); if(pf){pf.textContent=isFav(id)?"♥ في المفضلة — إزالة":"♡ أضف إلى المفضلة"; pf.setAttribute("aria-pressed",isFav(id));} }
   function nav() {
     var l = [["#/", "الرئيسية"], ["#/shop", "كل الأحذية"]].concat(cats().map(function (c) { return ["#/shop/" + encodeURIComponent(c), c]; })).concat([["#/support", "الدعم"]]);
     $("nav").innerHTML = l.map(function (a) { return '<a href="' + a[0] + '">' + esc(a[1]) + '</a>'; }).join("");
@@ -145,7 +149,7 @@
     if (t.dataset.fav) { toggleFav(+t.dataset.fav); return; }
     if (t.dataset.c) { filt = t.dataset.c; chips(); grid(); }
     else if (t.classList.contains("y2r-sw") && card) { var p = byId(card.dataset.id); colSel[p.id] = +t.dataset.k; press(t); card.querySelector(".stage img").src = imgOf(p, colSel[p.id]); if (vid == p.id) viewerSet(vid); }
-    else if (t.dataset.q) { var i = cart[+t.dataset.k]; i.q += +t.dataset.q; if (i.q < 1) cart.splice(+t.dataset.k, 1); else if (i.q > 10) i.q = 10; save(); render(); }
+    else if (t.dataset.q) { var i = cart[+t.dataset.k], x=byId(i.id), available=stockFor(i.id,i.z,i.ci); if(+t.dataset.q>0 && i.q>=available){$('msg').textContent='الكمية المتوفرة لهذا اللون والمقاس هي '+available+' فقط.';return;} i.q += +t.dataset.q; if (i.q < 1) cart.splice(+t.dataset.k, 1); else if (i.q > 10) i.q = 10; save(); render(); }
     else if (t.dataset.v) viewerSet(+t.dataset.v);
   });
   function close() { document.body.classList.remove("open"); }
@@ -176,7 +180,7 @@
       customer: { name: name, phone: phone, city: city },
       items: cart.map(function (i) { return { id: i.id, size: i.z, color: cols(byId(i.id))[i.ci].name, qty: i.q }; })
     }) }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
-      .then(function (o) { if (!o.ok) throw new Error(o.d.error || "خطأ"); cart = []; save(); render(); m.textContent = "تم تسجيل طلبك رقم " + o.d.id + " — احتفظ بالرقم لتتبّع الطلب. (وضع تجريبي)"; })
+      .then(function (o) { if (!o.ok) throw new Error(o.d.error || "خطأ"); cart = []; save(); render(); refreshStock().catch(function(){}); m.textContent = "تم تسجيل طلبك رقم " + o.d.id + " — احتفظ بالرقم لتتبّع الطلب. (وضع تجريبي)"; })
       .catch(function (e) { m.textContent = "تعذّر إرسال الطلب: " + e.message; });
   };
 
@@ -206,12 +210,14 @@
   function endIntro() { intro.style.display = "none"; }
   intro.onclick = endIntro; setTimeout(endIntro, 3200);
 
-  fetch("/api/products").then(function (r) { return r.json(); }).then(function (data) {
-    P = data; load(); loadFavorites(); updateFavCount(); chips(); grid(); catTiles(); render();
+  function refreshStock(){return fetch("/api/stock").then(function(r){if(!r.ok)throw Error('stock');return r.json();}).then(function(data){data.forEach(function(x){STOCK[x.productId]=x.colors||{};});if(pid){var p=byId(pid);if(p)renderProductSizes(p);}return data;});}
+  Promise.all([fetch("/api/products").then(function(r){return r.json();}),refreshStock()]).then(function (results) {
+    P = results[0]; load(); loadFavorites(); updateFavCount(); chips(); grid(); catTiles(); render();
     var hero = byId(3) || P[0];
     var hs = hero.cut || hero.image;
     $("heroShoe").innerHTML = '<img src="' + esc(hs) + '" alt="' + esc(hero.name) + '">';
     $("introShoe").innerHTML = '<img src="' + esc(hs) + '" alt="">';
     viewerSet(hero.id); nav(); route();
-  }).catch(function () { $("grid").innerHTML = '<p class="empty">تعذّر تحميل الأحذية. تأكد أن الخادم يعمل.</p>'; });
+    setInterval(function(){refreshStock().catch(function(){});},20000);
+  }).catch(function () { $("grid").innerHTML = '<p class="empty">تعذّر تحميل الأحذية أو المخزون. تأكد أن الخادم يعمل.</p>'; });
 })();
